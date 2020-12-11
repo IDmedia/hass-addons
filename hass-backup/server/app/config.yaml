@@ -1,0 +1,7 @@
+users:
+  admin@example.com: 
+    password: CHANGEME
+    is_admin: true
+
+  user@example.com: 
+    password: CHANGEME

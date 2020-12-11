@@ -1,0 +1,27 @@
+{
+  "name": "Hass Backup",
+  "version": "1.0.0",
+  "slug": "hass_backup",
+  "description": "Create snapshots and store them offsite",
+  "url": "",
+  "startup": "once",
+  "boot": "manual",
+  "hassio_api": true,
+  "hassio_role": "backup",
+  "map": ["backup:rw"],
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "options": {
+    "host": "192.168.1.50",
+    "port": "8070",
+    "ssl": false,
+    "username": "",
+    "password": ""
+  },
+  "schema": {
+    "host": "str",
+    "port": "int",
+    "ssl": "bool",
+    "username": "str",
+    "password": "str"
+  }
+}
