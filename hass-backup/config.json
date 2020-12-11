@@ -1,9 +1,9 @@
 {
   "name": "Hass Backup",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "slug": "hass_backup",
-  "description": "Create snapshots and store them offsite",
-  "url": "",
+  "description": "Automatically create snapshots and store them offsite (selfhosted)",
+  "url": "https://github.com/IDmedia/hass-addons/hass-backup",
   "startup": "once",
   "boot": "manual",
   "hassio_api": true,
@@ -12,7 +12,7 @@
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "options": {
     "host": "192.168.1.50",
-    "port": "8070",
+    "port": 8070,
     "ssl": false,
     "username": "",
     "password": ""
