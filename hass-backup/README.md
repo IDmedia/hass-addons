@@ -44,13 +44,14 @@ I've added the following automation to make a daily backup.
 
 _configuration.yaml_
 ```yaml
-automations:
+automation:
   - alias: Daily Backup at 2 AM
-  trigger:
-    platform: time
-    at: '2:00:00'
-  action:
-  - service: hassio.addon_start
-    data:
-      addon: local_hass_backup
+    initial_state: true
+    trigger:
+      platform: time
+      at: '2:00:00'
+    action:
+      - service: hassio.addon_start
+        data:
+          addon: a6620db0_hass_backup
 ```
