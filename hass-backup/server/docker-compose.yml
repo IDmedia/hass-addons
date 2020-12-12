@@ -8,6 +8,7 @@ services:
     ports:
       - '8070:80'
     environment:
+      - LIMIT_BACKUPS=7
       - TZ=Europe/Oslo
     volumes:
       - '/volume2/docker/hass-backup/app:/app'
