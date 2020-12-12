@@ -79,7 +79,8 @@ sensor:
 
 ![Lovelace Card Example](lovelace_card_example.png "Lovelace Card Example")
 
-Here is my lovelace card that I use. Please modify it to your liking. Note that it requires lovelace_gen.
+Here is my lovelace card that I use. Please modify it to your liking. 
+Note that it requires [lovelace_gen](https://github.com/thomasloven/hass-lovelace_gen).
 
 _hass_backup_card.yaml_
 ```yaml
