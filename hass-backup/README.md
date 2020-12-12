@@ -77,7 +77,7 @@ sensor:
 
 ## Example: Lovelace card
 
-![Lovelace Card Example](hass-backup/lovelace_card_example.png "Lovelace Card Example")
+![Lovelace Card Example](lovelace_card_example.png "Lovelace Card Example")
 
 Here is my lovelace card that I use. Please modify it to your liking. Note that it requires lovelace_gen.
 
