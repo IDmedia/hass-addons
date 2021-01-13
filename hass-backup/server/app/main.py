@@ -111,7 +111,7 @@ def upload_file():
         # Remove old files
         list_of_files = glob.glob(os.path.join(upload_dir, '*.tar'))
         list_of_files.sort(key=os.path.getmtime, reverse=True)
-        for f in list_of_files[os.getenv('LIMIT_BACKUPS', 7):]:
+        for f in list_of_files[int(os.getenv('LIMIT_BACKUPS', 14)):]:
             os.remove(os.path.join(upload_dir, f))
         
         # Discard files smaller than 10 bytes
