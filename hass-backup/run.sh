@@ -19,7 +19,7 @@ then
 fi
 
 # Remove leftover snapshots
-rm /backup/*.tar
+rm -f /backup/*.tar
 
 # Create the backup
 echo "Creating backup ($(date +'%d.%m.%Y %H:%M'))"

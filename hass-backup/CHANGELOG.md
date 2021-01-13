@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v0.0.4] (2021-01-13)
+
+- Force deletion of leftover snapshots so the command does not fail if no snapshots exists
+
 ## [v0.0.3] (2021-01-13)
 
 - Make sure any leftover snapshots are removed from Home Assistant
