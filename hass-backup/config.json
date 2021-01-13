@@ -1,8 +1,8 @@
 {
   "name": "Hass Backup",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "slug": "hass_backup",
-  "description": "Automatically create snapshots and store them offsite (selfhosted)",
+  "description": "Automatically create snapshots and store them off-site",
   "url": "https://github.com/IDmedia/hass-addons/hass-backup",
   "startup": "once",
   "boot": "manual",

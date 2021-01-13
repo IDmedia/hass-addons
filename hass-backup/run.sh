@@ -18,6 +18,9 @@ then
     exit 1
 fi
 
+# Remove leftover snapshots
+rm /backup/*.tar
+
 # Create the backup
 echo "Creating backup ($(date +'%d.%m.%Y %H:%M'))"
 slug=$(${HA} snapshots new --name="${name}" | cut -d' ' -f2)
