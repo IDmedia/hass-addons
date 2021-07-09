@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v0.0.5] (2021-07-09)
+
+- Remove server code from repo as Home Assistant seemed to complain about that being bundled with the addon
+
 ## [v0.0.4] (2021-01-13)
 
 - Force deletion of leftover snapshots so the command does not fail if no snapshots exists
