@@ -10,7 +10,7 @@ USERNAME=$(jq --raw-output ".username" $CONFIG_PATH)
 PASSWORD=$(jq --raw-output ".password" $CONFIG_PATH)
 
 # Make sure all variables are configured
-if [ -z "$HOST" ] || [ -z "$PORT" ] || [ -z "$EXCLUDE_MEDIA" ] || [ -z "$USERNAME" ] || [ -z "$PASSWORD" ]
+if [ -z "$HOST" ] || [ -z "$USERNAME" ] || [ -z "$PASSWORD" ]
 then
     echo "Please configure the addon before use"
     exit 1

@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v0.0.7] (2022-04-25)
+ - Fix config validation
+
 ## [v0.0.6] (2022-04-25)
 
 - The use of ha snapshot is deprecated so using ha backups instead
