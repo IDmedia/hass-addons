@@ -1,6 +1,6 @@
 {
   "name": "Hass Backup",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "slug": "hass_backup",
   "description": "Automatically create snapshots and store them off-site",
   "url": "https://github.com/IDmedia/hass-addons/tree/master/hass-backup",
@@ -11,17 +11,13 @@
   "map": ["backup:rw"],
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "options": {
-    "host": "192.168.1.50",
-    "port": 8070,
-    "ssl": false,
+    "host": "",
     "username": "",
     "password": ""
   },
   "schema": {
-    "host": "str",
-    "port": "int",
-    "ssl": "bool",
-    "username": "str",
-    "password": "str"
+    "host": "url",
+    "username": "email",
+    "password": "password"
   }
 }

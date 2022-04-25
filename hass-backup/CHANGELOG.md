@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v0.0.6] (2022-04-25)
+
+- The use of ha snapshot is deprecated so using ha backups instead
+- Removed port and ssl from configuration and fix field-validation
+- Increased the curl timeout to 2 hours
+
 ## [v0.0.5] (2021-07-09)
 
 - Remove server code from repo as Home Assistant seemed to complain about that being bundled with the addon
