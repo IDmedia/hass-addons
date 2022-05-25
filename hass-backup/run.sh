@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/with-contenv bashio
+
+# Exit script on errors
 set -e
 
 CONFIG_PATH=/data/options.json
@@ -21,7 +23,7 @@ rm -f /backup/*.tar
 
 # Create the backup
 echo "Creating backup ($(date +'%d.%m.%Y %H:%M'))"
-slug=$(${HA} snapshots new --name="${name}" | cut -d' ' -f2)
+slug=$(${HA} snapshots new | cut -d' ' -f2)
 echo "Backup created: ${slug}"
 
 # Upload backup

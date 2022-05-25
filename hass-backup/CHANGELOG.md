@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v1.0.0] (2022-02-25)
+ - Rewrite config.json to yaml and make addon compatible with latest image
+
 ## [v0.0.8] (2022-02-25)
  - Revert schema definition
 
