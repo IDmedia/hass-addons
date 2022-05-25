@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v0.0.8] (2022-02-25)
+ - Revert schema definition
+
 ## [v0.0.7] (2022-04-25)
  - Fix config validation
 
