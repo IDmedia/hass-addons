@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v1.0.1] (2022-07-12)
+ - Use ```ha backups``` instead of the deprecated ```ha snapshots```
+
 ## [v1.0.0] (2022-02-25)
  - Rewrite config.json to yaml and make addon compatible with latest image
 

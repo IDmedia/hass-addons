@@ -18,12 +18,12 @@ then
     exit 1
 fi
 
-# Remove leftover snapshots
+# Remove leftover backups
 rm -f /backup/*.tar
 
 # Create the backup
 echo "Creating backup ($(date +'%d.%m.%Y %H:%M'))"
-slug=$(${HA} snapshots new | cut -d' ' -f2)
+slug=$(${HA} backups new | cut -d' ' -f2)
 echo "Backup created: ${slug}"
 
 # Upload backup
@@ -32,9 +32,9 @@ echo "Uploading ${slug}.tar to ${upload_url}"
 curl -u ${USERNAME}:${PASSWORD} -X POST -m 7200 -s -F file=@"/backup/${slug}.tar" ${upload_url}
 
 # Delete local backup
-${HA} snapshots reload
+${HA} backups reload
 echo "Deleting local backup: ${slug}"
-${HA} snapshots remove ${slug}
+${HA} backups remove ${slug}
 
 echo "Backup process done!"
 exit 0
