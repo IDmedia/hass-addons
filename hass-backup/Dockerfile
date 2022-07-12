@@ -11,7 +11,7 @@ RUN apk add --no-cache curl jq
 ARG BUILD_ARCH
 ARG CLI_VERSION
 RUN apk add --no-cache curl \
-    && curl -Lso /usr/bin/ha https://github.com/home-assistant/cli/releases/download/4.9.0/ha_${BUILD_ARCH} \
+    && curl -Lso /usr/bin/ha https://github.com/home-assistant/cli/releases/download/4.18.0/ha_${BUILD_ARCH} \
     && chmod a+x /usr/bin/ha
 
 # Copy data

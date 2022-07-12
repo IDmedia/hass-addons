@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v1.0.2] (2022-07-12)
+ - Update CLI to 4.18.0
+
 ## [v1.0.1] (2022-07-12)
  - Use ```ha backups``` instead of the deprecated ```ha snapshots```
 
