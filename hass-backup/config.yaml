@@ -1,5 +1,5 @@
 name: Hass Backup
-version: 1.0.1
+version: 1.0.2
 slug: hass_backup
 description: Automatically create backups and store them off-site
 url: https://github.com/IDmedia/hass-addons/tree/master/hass-backup
