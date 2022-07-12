@@ -1,6 +1,6 @@
 # Hass Backup
 
-> Automatically create snapshots and store them offsite (selfhosted)
+> Automatically create backups and store them offsite (selfhosted)
 
 ## About
 
@@ -20,7 +20,7 @@ All endpoints will prompt for credentials which are stored in the `config.yaml` 
 GET `/status` - Return the backup status for the logged in account. Users with the `is_admin` attribute may get any status by appending the `account` parameter to the query `/status?account=user@example.com`.
 Response: ```{"account":"demo@example.com","backups":5,"days_ago":0,"latest_backup":"12.12.2020 00:21"}```
 
-POST `/upload` - Allows the Home Assistant addon to upload snapshots. All backup will be stored in the `/uploads/<account>/` directory.
+POST `/upload` - Allows the Home Assistant addon to upload backups. All backups will be stored in the `/uploads/<account>/` directory.
 
 ## Installation (Home Assistant Addon)
 

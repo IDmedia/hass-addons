@@ -1,7 +1,7 @@
 name: Hass Backup
 version: 1.0.1
 slug: hass_backup
-description: Automatically create snapshots and store them off-site
+description: Automatically create backups and store them off-site
 url: https://github.com/IDmedia/hass-addons/tree/master/hass-backup
 startup: once
 boot: manual
