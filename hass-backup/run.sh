@@ -23,7 +23,8 @@ rm -f /backup/*.tar
 
 # Create the backup
 echo "Creating backup ($(date +'%d.%m.%Y %H:%M'))"
-slug=$(${HA} backups new | cut -d' ' -f2)
+output=$($HA backups new)
+slug=$(echo "$output" | grep -oE 'slug: (.*)' | awk '{print $2}')
 echo "Backup created: ${slug}"
 
 # Upload backup
