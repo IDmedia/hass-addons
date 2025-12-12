@@ -30,7 +30,14 @@ echo "Backup created: ${slug}"
 # Upload backup
 upload_url="${HOST}/upload"
 echo "Uploading ${slug}.tar to ${upload_url}"
-curl -u "${USERNAME}:${PASSWORD}" -X POST -m 7200 -s -F "file=@\"/backup/${slug}.tar\"" "${upload_url}"
+curl -u "${USERNAME}:${PASSWORD}" \
+     -X POST \
+     -m 7200 \
+     -s \
+     --data-binary "@\"/backup/${slug}.tar\"" \
+     -H "X-Filename: ${slug}.tar" \
+     -H "Content-Type: application/octet-stream" \
+     "${upload_url}"
 
 # Delete local backup
 ${HA} backups reload
