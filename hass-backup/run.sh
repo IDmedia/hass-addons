@@ -33,11 +33,12 @@ echo "Uploading ${slug}.tar to ${upload_url}"
 curl -u "${USERNAME}:${PASSWORD}" \
      -X POST \
      -m 7200 \
-     -s \
-     --data-binary @- \
+     -sS \
+     --fail \
+     -T "/backup/${slug}.tar" \
      -H "X-Filename: ${slug}.tar" \
      -H "Content-Type: application/octet-stream" \
-     "${upload_url}" < "/backup/${slug}.tar"
+     "${upload_url}"
 
 # Delete local backup
 ${HA} backups reload
