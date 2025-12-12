@@ -34,10 +34,10 @@ curl -u "${USERNAME}:${PASSWORD}" \
      -X POST \
      -m 7200 \
      -s \
-     --data-binary "@/backup/${slug}.tar" \
+     --data-binary @- \
      -H "X-Filename: ${slug}.tar" \
      -H "Content-Type: application/octet-stream" \
-     "${upload_url}"
+     "${upload_url}" < "/backup/${slug}.tar"
 
 # Delete local backup
 ${HA} backups reload
